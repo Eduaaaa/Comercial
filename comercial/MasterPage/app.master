@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="app.master.vb" Inherits="comercial.app" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Comercial Maritza</title>
+    <link rel="stylesheet" href="../../Content/milligram.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+
+  <div class="row">
+      <div class="column">
+        <a class="button" href="/app/inicio.aspx">Inicio</a>
+    </div>
+    <div class="column">
+        <a class="button" href="/app/clientes.aspx">Clientes</a>
+    </div>
+    <div class="column">
+        <a class="button" href="/app/pilotos.aspx">Pilotos</a>
+    </div>
+   
+      <div class="column">
+          <a class="button" href="/app/productos.aspx">Productos</a>
+      </div>
+  </div>
+
+
+
+    <div>
+        
+        <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+        </asp:Content>
+
+    </div>
+            </div>
+    </form>
+</body>
+</html>
